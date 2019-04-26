@@ -1,0 +1,95 @@
+{
+  "_from": "pbn",
+  "_id": "pbn@1.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-22PRLNBhwqYlLfkjexCFNxloCvVCIXzD3S8xDpTZxDpIFyVZNEvw2tj5VncYVsBuTL/wRvxoSyFLDspfVmp7cw==",
+  "_location": "/pbn",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "pbn",
+    "name": "pbn",
+    "escapedName": "pbn",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/pbn/-/pbn-1.5.0.tgz",
+  "_shasum": "fddbe4310ac17ee2c7bdb96f2e9383052d0b296e",
+  "_spec": "pbn",
+  "_where": "/Users/leo/_projects/bridgebee/bridgebee-app/api",
+  "author": {
+    "name": "Richard Schneider",
+    "email": "makaretu@gmail.com"
+  },
+  "bin": {
+    "pbn": "./bin/pbn.js"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/richardschneider/pbn/issues"
+  },
+  "bundleDependencies": false,
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "dependencies": {
+    "buffer-peek-stream": "^1.0.1",
+    "lstream": "0.0.4",
+    "multipipe": "^1.0.2"
+  },
+  "deprecated": false,
+  "description": "Parse and transform a PBN stream",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-jshint": "^2.0.1",
+    "gulp-spawn-mocha": "^3.1.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "mocha": "*",
+    "semantic-release": "^6.3.2",
+    "should": "*",
+    "validate-commit-msg": "^2.6.1"
+  },
+  "homepage": "https://github.com/richardschneider/pbn",
+  "keywords": [
+    "bridge",
+    "pbn",
+    "portable",
+    "notation",
+    "parse",
+    "transform"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "pbn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardschneider/pbn.git"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "gulp test"
+  },
+  "version": "1.5.0"
+}
